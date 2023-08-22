@@ -1,0 +1,138 @@
+@media screen and (max-width: 950px) {
+  #first-img {
+    position: static;
+    width: 100%;
+    height: 100vh;
+    min-height: 400px;
+    /* max-width: 800px; */
+  }
+  .static {
+    margin-bottom: -3px;
+    /* min-height: 400px; */
+  }
+  #content {
+    position: absolute;
+    top: 60%;
+
+    width: 70%;
+    & h1 {
+      font-size: 50px;
+      /* border: 2px solid blue; */
+    }
+    & p {
+      font-size: 20px;
+    }
+  }
+  #gb {
+    width: 100%;
+    & .groom,
+    & .bride {
+      width: 90%;
+    }
+  }
+  #mobile {
+    width: 50%;
+  }
+  body .inner {
+    height: 100%;
+    width: 100%;
+  }
+  body .inn {
+    width: 100%;
+    height: 500px;
+  }
+  #schedule {
+    width: 100%;
+  }
+  #foot {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+ 
+  #content {
+    position: absolute;
+    top: 50%;
+    width: 80%;
+
+    & h1 {
+      width: 100%;
+      font-size: 40px;
+    }
+    & p {
+      width: 100%;
+    }
+  }
+  .static {
+    margin-bottom: -5px;
+  }
+  body .inn {
+    height: 600px;
+  }
+  #gb {
+    width: 100%;
+    & .groom,
+    & .bride {
+      width: 90%;
+      & h2 {
+        padding-bottom: 30px;
+      }
+      & p {
+        font-size: 17px;
+      }
+    }
+  }
+  body .inner {
+    width: 100%;
+    height: 100%;
+  }
+  #saturday {
+    font-size: 35px;
+    & nav {
+      font-size: 35px;
+    }
+  }
+}
+
+@media screen and (max-height: 450px) {
+  
+  #static {
+  & #content {
+    position: absolute;
+    /* border: 2px solid red; */
+  top: 40%;
+  }
+  
+}
+  #first-img {
+    min-height: 500px;
+  }
+  .static {
+    height: auto;
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #content {
+    position: absolute;
+    top: 40%;
+  }
+ #first-img {
+    min-height: 700px;
+  }
+}
+@media screen and (max-width: 250px) {
+  #first-img {
+    height: auto;
+  }
+  .static {
+    
+    display: flex;
+    align-items: center;
+  }
+  #content {
+    margin-top: 40px;
+    position: auto;
+    top: 0;
+  }
+}

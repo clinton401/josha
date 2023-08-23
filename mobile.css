@@ -10,25 +10,26 @@
     margin-bottom: -3px;
     /* min-height: 400px; */
   }
+  #content h1 {
+      font-size: 50px;
+      /* border: 2px solid blue; */
+    }
+    #content p {
+      font-size: 20px;
+    }
   #content {
     position: absolute;
     top: 60%;
 
     width: 70%;
-    & h1 {
-      font-size: 50px;
-      /* border: 2px solid blue; */
-    }
-    & p {
-      font-size: 20px;
-    }
+   
   }
-  #gb {
-    width: 100%;
-    & .groom,
-    & .bride {
+.groom, .bride {
       width: 90%;
     }
+  #gb {
+    width: 100%;
+   
   }
   #mobile {
     width: 50%;
@@ -49,19 +50,19 @@
   }
 }
 @media screen and (max-width: 460px) {
- 
+ #content h1 {
+      width: 100%;
+      font-size: 40px;
+    }
+    #content p {
+      width: 100%;
+    }
   #content {
     position: absolute;
     top: 50%;
     width: 80%;
 
-    & h1 {
-      width: 100%;
-      font-size: 40px;
-    }
-    & p {
-      width: 100%;
-    }
+    
   }
   .static {
     margin-bottom: -5px;
@@ -69,18 +70,18 @@
   body .inn {
     height: 600px;
   }
+  .groom, .bride {
+ width: 90%;
+  }
+  .groom h2, .bride h2 {
+ padding-bottom: 30px;
+  }
+  .groom p, .bride p {
+ font-size: 17px;
+  }
   #gb {
     width: 100%;
-    & .groom,
-    & .bride {
-      width: 90%;
-      & h2 {
-        padding-bottom: 30px;
-      }
-      & p {
-        font-size: 17px;
-      }
-    }
+    
   }
   body .inner {
     width: 100%;
@@ -88,22 +89,22 @@
   }
   #saturday {
     font-size: 35px;
-    & nav {
+    
+  }
+   #saturday nav {
       font-size: 35px;
     }
-  }
 }
 
 @media screen and (max-height: 450px) {
   
-  #static {
-  & #content {
+  #static  #content {
     position: absolute;
     /* border: 2px solid red; */
   top: 40%;
   }
   
-}
+
   #first-img {
     min-height: 500px;
   }

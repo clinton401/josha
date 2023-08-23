@@ -64,14 +64,7 @@ body {
   margin: 3px 0;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-.content {
-  position: fixed;
-  /* border-left: 8px solid #333; */
-  padding-left: 15px;
-  top: 53%;
-  width: 43%;
-  left: 10%;
-  & h1 {
+.content h1 {
     font-size: 70px;
     padding: 5px;
     color: #ffffff;
@@ -80,7 +73,7 @@ body {
     /* font-family: 'Arimo', sans-serif; */
     /* font-family: "Playfair Display", serif; */
   }
-  & p {
+  .content p {
     font-size: 20px;
     color: #ffffff;
     padding-top: 20px;
@@ -88,12 +81,16 @@ body {
 
     font-weight: 400;
   }
+.content {
+  position: fixed;
+  /* border-left: 8px solid #333; */
+  padding-left: 15px;
+  top: 53%;
+  width: 43%;
+  left: 10%;
+
 }
-.static {
-  position: relative;
-  /* overflow: hidden; */
-  color: black;
-  & img {
+.static img {
     width: 60%;
     /* border-radius: 0 15px 15px 0; */
     position: fixed;
@@ -105,7 +102,7 @@ body {
     background-repeat: no-repeat; */
     object-position: top;
   }
-  & nav {
+  .static nav {
     position: fixed;
     top: 30px;
     background: rgba(255, 255, 255, 0.5);
@@ -120,12 +117,12 @@ body {
     left: 3%;
     cursor: pointer;
     justify-content: center;
-    & h2 {
-      padding-left: 15px;
-      font-weight: 100;
-      font-size: 15px;
-    }
   }
+.static {
+  position: relative;
+  /* overflow: hidden; */
+  color: black;
+  
 }
 
 .mobile {
@@ -395,59 +392,53 @@ body {
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
   }
+  .story {
+     width: 100%;
+    padding: 10px 0;
+  }
+  .gb-story {
+width: 40%;
+      padding: 10px;
+      /* border: 2px solid red; */
+      float: right;
+  }
+  .groom, .bride {
+   padding-bottom: 30px;
+        width: 90%;
+        margin: 0 auto;
+  }
+  .groom h2, .bride h2 {
+font-size: 40px;
+          font-family: "Playfair Display", serif;
+          text-align: left;
+          padding-bottom: 50px;
+  }
+  .groom p, .bride p {
+font-size: 20px;
+          /* color: black; */
+          padding-bottom: 30px;
+          font-weight: 50;
+  }
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  & .story {
-    width: 100%;
-    padding: 10px 0;
-
-    & .gb-story {
-      width: 40%;
-      padding: 10px;
-      /* border: 2px solid red; */
-      float: right;
-      & .groom,
-      & .bride {
-        padding-bottom: 30px;
-        width: 90%;
-        margin: 0 auto;
-        /* border: 3px solid blue; */
-        /* font-size: 30px; */
-        & h2 {
-          font-size: 40px;
-          font-family: "Playfair Display", serif;
-          text-align: left;
-          padding-bottom: 50px;
-        }
-        & p {
-          font-size: 20px;
-          /* color: black; */
-          padding-bottom: 30px;
-          font-weight: 50;
-        }
-      }
-    }
-  }
+  
 }
-.calender {
-  width: 100%;
-  /* border: 2px solid red; */
-  padding: 10px 0;
-  & .schedule {
-    width: 40%;
+.schedule {
+  width: 40%;
     float: right;
 
     padding: 10px;
-    & h2 {
-      font-size: 40px;
+}
+.schedule h2 {
+  font-size: 40px;
       text-align: center;
       padding-bottom: 50px;
       font-family: "Playfair Display", serif;
-    }
-    & .below-schedule {
+}
+.below-schedule {
       width: 90%;
       text-align: center;
       padding-bottom: 25px;
@@ -456,20 +447,20 @@ main {
       font-size: 23px;
       border-bottom: 0.5px solid gray;
     }
-    & h3 {
+    .schedule h3 {
       text-align: center;
       font-size: 25px;
       font-weight: 900;
       padding: 20px 0 10px 0;
     }
-    & h4 {
+    .schedule h4 {
       text-align: center;
       font-size: 20px;
       font-weight: 600;
       color: gray;
       padding-bottom: 40px;
     }
-    & p {
+    .schedule p {
       width: 90%;
       padding-top: 10px;
       text-align: center;
@@ -478,7 +469,7 @@ main {
 
       /* font-weight: 900; */
     }
-    & .hanger {
+    .hanger {
       display: flex;
       align-items: center;
       width: 90%;
@@ -488,39 +479,42 @@ main {
       text-align: left;
       padding-top: 30px;
       padding-bottom: 0;
-      & img {
+    }
+    .hanger img {
         width: 20px;
         height: 20px;
         margin-right: 20px;
       }
-      & a {
+      .hanger a {
         color: rgb(174, 190, 148);
         /* text-transform: uppercase; */
       }
-    }
-    & .map {
+      .map {
       text-align: center;
     }
-    & .reception {
+    .reception {
       padding-top: 10px;
     }
-    & .registry {
-      & p {
+    .registry p {
         padding-bottom: 30px;
       }
-    }
-  }
+.calender {
+  width: 100%;
+  /* border: 2px solid red; */
+  padding: 0 0 10px 0;
+ 
 }
 .gmeet {
   padding-bottom: 25px;
-  & p {
+
+}
+.gmeet p {
     font-size: 20px;
     font-weight: 900;
     text-align: center;
     padding-bottom: 10px;
     /* width: 80%; */
   }
-}
 .meet {
   height: 20px;
   width: 20px;
@@ -544,55 +538,54 @@ main {
   justify-content: center;
   text-align: center;
 }
-footer {
-  width: 100%;
-  /* border: 3px solid red; */
-  padding: 0px 0 60px 0;
-  & .foot {
-    width: 40%;
+/* footer */
+.foot {
+  width: 40%;
 
     padding: 0px 0 30px 0;
     float: right;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid blue; */
-    & div {
+}
+.foot div {
       /* border: 3px solid black; */
       display: flex;
       padding-bottom: 30px;
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
-    & ul {
+    .foot ul {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      & li {
+    }
+    .foot li {
         font-size: 20px;
         /* text-decoration: underline; */
         list-style: none;
         cursor: pointer;
       }
-      & img {
+      .foot img {
         height: 30px;
         text-decoration: none;
         width: 30px;
       }
-      & a {
+      .foot a {
         color: rgb(174, 190, 148);
         text-decoration: none;
       }
-      & a:hover {
+      .foot a:hover {
         text-decoration: underline;
       }
-    }
-  }
+footer {
+  width: 100%;
+  /* border: 3px solid red; */
+  padding: 0px 0 60px 0;
+  
 }
 
 /* gift */
-.second-body {
-  padding: 40px 0;
-  & .arrow-left {
+.arrow-left {
     position: fixed;
     top: 60px;
     left: 5%;
@@ -604,12 +597,15 @@ footer {
     border: none;
     color: white;
   }
-  & .arrow-left:hover {
+  .arrow-left:hover {
     background-color: transparent;
     color: black;
     border: 1px solid black;
     transition: 0.5s;
   }
+.second-body {
+  padding: 40px 0;
+ 
 }
 .tit {
   font-size: 50px;
@@ -620,18 +616,8 @@ footer {
   color: black;
   padding: 20px 0;
 }
-
-.gifts {
-  padding: 20px 0;
-  display: flex;
-  /* border: 3px solid black; */
-  width: 100%;
-  color: black;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-
-  & div {
-    width: 30%;
+.gifts div {
+width: 30%;
     /* padding: 30px 0; */
     padding-bottom: 30px;
     min-width: 300px;
@@ -642,11 +628,12 @@ footer {
     overflow: hidden;
     border: 1px solid gray;
     border-radius: 15px;
-    & img {
+}
+.gifts img {
       width: 100%;
       /* height: 20px; */
     }
-    & a {
+    .gifts a {
       display: flex;
       width: 100%;
       color: black;
@@ -658,34 +645,42 @@ footer {
       padding: 0 4px;
       text-decoration: none;
     }
-    & h4 {
+    .gifts h4 {
       font-size: 25px;
       font-weight: 400;
       margin-bottom: 20px;
     }
-    /* & button {
-      width: 200px;
-      padding: 10px 0;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-    } */
-    & nav {
+    .gifts nav {
       width: 80%;
       height: 250px;
       /* border: 2px solid red; */
     }
-  }
+.gifts {
+  padding: 20px 0;
+  display: flex;
+  /* border: 3px solid black; */
+  width: 100%;
+  color: black;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+ 
+}
+.cham {
+  text-align: center;
+  /* border: 1px solid blue; */
+  width: 100%;
 }
 .fry-pan {
   height: 250px;
 }
 #large {
   width: 100%;
-  & img {
+  
+}
+#large img {
     height: 235px;
   }
-}
 .bookmarkBtn {
   width: 140px;
   height: 50px;
@@ -761,7 +756,9 @@ footer {
   max-width: 700px;
   height: 500px;
   padding: 0 50px 50px 50px;
-  & h2 {
+  
+}
+.swiper h2 {
     font-size: 40px;
     font-family: "Playfair Display", serif;
     text-align: center;
@@ -769,7 +766,6 @@ footer {
     border: 3px solid black;
     /* padding-bottom: 50px; */
   }
-}
 .mom {
   font-size: 40px;
   font-family: "Playfair Display", serif;
